@@ -12,6 +12,8 @@
   "dependencies": {
     "debug": "^4.1.0",
     "express": "^4.16.4",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "multer": "^1.4.1",
+    "uuid": "^3.3.2"
   }
 }
