@@ -1,22 +1,24 @@
+document.getElementById("file_manager_upload").style.display = "none";
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-
+console.log("user");
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
 
     var user = firebase.auth().currentUser;
 
     if(user != null){
-
+console.log("!=user");
       var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+      document.getElementById("bemvindo").innerHTML = "Bem-vindo Usuário: " + email_id;
 
     }
 
   } else {
     // No user is signed in.
-
+console.log("haha");
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
 
